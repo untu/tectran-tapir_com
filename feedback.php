@@ -2,7 +2,7 @@
 
 $config = [
   "sendTo" => "gk@saymon.info, welcome@saymon.info",
-  "subject" => "Homeweather: требуется консультация",
+  "subject" => "Tectran-tapir: требуется консультация",
 ];
 
 function objToStr($obj){
