@@ -11,7 +11,7 @@
     <!-- Add Your favicon here -->
     <!--<link rel="icon" href="img/favicon.ico">-->
 
-    <title>TECTRAN TAPIR TECH SPEC</title>
+    <title>TECTRAN TAPIR CAPACITY PLANING</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -70,117 +70,63 @@
         <div class="row">
             <div class="col-lg-12 ">
                 
-                <h1>TECTRAN TAPIR Technical Specification</h1>
+                <h1>TECTRAN TAPIR Capacity Planning</h1>
         TECTRAN is a short word for Technical Transactions Analysis implementation. </br>
         TAPIR is an unique name of telecom protocols family product. </br>
-        This document describes technology aspects of TECTRAN TAPIR functionality support.</br>
+        This document describes capacity planning aspects of TECTRAN TAPIR functionality support. </br>
         
          </br></br>
-<dl>
-    <dt>Key functions</dt></br>
-    <dd><blockquote>
-        <li>Raw data spanned data PCAP and CDR parsing/load from multi-source</br>
-        <li>Web access with multi-level permissions with search/filter abilities</br>
-        <li>Ultra-fast call-optimised backend storage</br>
-    </blockquote></dd>    
     
-    <dt>Solution functionals</dt></br>
-    <dd><blockquote>
-
-        <li>High speed time, called/calling uri search/filtering</br>
-        <li>Line per call search result representation with call details aggregation</br>
-        <li>Dynamic call-flow diagram build for each and any selected call with any number of legs</br>
-        <li>Call-flow diagram export with graphic (PNG), text (TXT) and Wireshark (PCAP) for later analysis and share</br>
-        <li>Real-time Key Performance Indicators calculation and visualisation (graphics, widgets)</br>
-        <li>Calls data and KPI enrichment with data arriving offline</br>
-        <li>Individual time-to-store settings for each of the SIP method to save space and valuable data</br>
-        <li>Nodes naming service for call-flow diagrams visualisation to help engineers to troubleshoot fast</br>
-        <li>Valuable SIP fields and URI color highlighting to help engineers to troubleshoot fast</br>
-    </blockquote></dd>    
-
-    <dt>Web UI functionals</dt></br>
-    <dd><blockquote>
-        <li>Authentication with LDAP/AD support</br>
-        <li>Manageable roles and permissions for numbering plan and operations access </br>
-        <li>Roles based dashboard and search/filter customisation</br>
-        <li>Paged output for huge amount of searched/filtered calls results</br>
-        <li>Amount of widgets and graphics to organise all the KPIs dashboard for instant operability control </br>
-    </blockquote></dd>    
-    
-    <dt>Real-time collected KPI</dt></br>
-    <dd><blockquote> 
-        <li>Answer Seizure Ratio, per node and overall</br>
-        <li>SIP Status Codes accounting as per node as for nodes group configured</br>
-        <li>Individual call Call Duration Time</br>
-        <li>Individual call Call Setup Time</br>
-    </blockquote></dd>    
-
-    <dt>Off-line collected KPI from CDR</dt></br>
-    <dd><blockquote>
-        <li>RTCP Packets Lost</br>
-        <li>RTCP Average Jitter</br>
-        <li>RTCP Average Latency</br>
-        <li>RTCP Max Jitter</br>
-        <li>RTCP Max Latency</br>
-        <li>RTP Packets Lost</br>
-        <li>RTP Average Jitter</br>
-        <li>RTP Max Jitter</br>
-        <li>Calling R-Factor</br>
-        <li>Calling Mean Opinion Score</br>
-        <li>Called R-Factor</br>
-        <li>Called Mean Opinion Score</br>
-    </blockquote></dd>    
-
-    <dt>Data source supported</dt></br>
-    <dd><blockquote>
-        <li>SPAN Ports traffic files</br>
-        <li>Oracle SBC CDR files</br>
-        <li>Soft-Switch log files (an adaptation may require) </br>
-    </blockquote></dd>    
-
-    <dt>Basic IP-telephony protocols support</dt></br>
-    <dd><blockquote>
-        <li>SIP-INVITE and associated methods</br>
-        <li>SIP-REGISTER and associated methods</br>
-        <li>SIP-I/SIP-T with MIME content decoding</br>
-    </blockquote></dd>    
-
-    <dt>Extended features</dt></br>
-    <dd><blockquote>
-        <li>CAMEL/CAP parsing and storage support</br>
-        <li>MAP parsing and storage support</br>
-        <li>ISUP parsing and storage support</br>
-        <li>DIAMETER parsing and storage support</br>
-    </blockquote>
-    Note: for legacy TDM SS7 support customer may require HW probes for data collect</br>
-    </dd>    
-    </br>
-    <dt>Real-time collected KPI enrichment planned</dt></br>
-    <dd><blockquote>
-        <li>Average Call Duration</br>
-        <li>Registration Request Delay</br>
-        <li>Ineffective Registration Attempts</br>
-        <li>Successful Session Setup</br>
-        <li>Session Disconnect Delay</br>
-        <li>Failed Session Completion</br>
-    </blockquote></dd>    
-
-    <dt>IP-telephony protocols enrichment planned</dt></br>
-    <dd><blockquote>
-        <li>Real-time raw RTP parsing</br>
-        <li>Real-time raw RTCP parsing</br>
-    </blockquote></dd>    
-
-    <dt>Raw data parsing SIP methods enrichment planned</dt></br>
-    <dd><blockquote>
-        <li>OPTIONS</br>
-        <li>MESSAGE</br>
-        <li>SUBSCRIBE</br>
-        <li>NOFITY</br>
-    </blockquote></dd>  
-</dl>  
-FF -J
-
+For the correct sizing of the TECTRAN TAPIR nodes a telecom and/or IP-telephony network and it’s traffic inspection need to be done. Some of important parameters are:
+</br></br><blockquote><ul>
+<li>Number of days for call history storage required
+<li>Number of days for user registration history storage required
+<li>Number of legs for each of the call scenario
+<li>Number of traffic data source need to be analysed (including SPAN probes, CDR, etc)
+<li>Operations per call (technical transactions) for each of scenario
+<li>Identify if technical traffic copy recording already activated/used 
+<li>Storage capacity limitations if a site already have HW to re-use
+</ul></blockquote>
+The listed parameters identification helps to clarify data volumes and plan on site or cloud resources required for the network. 
+</br></br>
+The following capacity reference is useful for planning. 
+</br></br><blockquote><ul>
+<li>Calls history store for 20 days (SIP INVITE and associated exchange)
+<li>Customer User-Agents registration history sore for 20 days (SIP REGISTER)
+</ul></blockquote>
+Number of legs of capture is an important parameter. </br>
+The reference is designed as  
+</br></br><blockquote><ul>
+<li>4-leg traffic: Internet -(1)- Access -(2)- SSW -(3)- SBC-I -(4)- SBC-Core
+</ul></blockquote>
+</br>
+In each network a call could be assisted with a various number of infrastructure nodes intercommunication. </br>
+The reference use is:
+</br></br><blockquote><ul>
+<li>44 operations per call (SIP PDU or arrows on datagram) 
+<li>12 operations per leg
+</ul></blockquote>
+Protocol Data Unit (PDU) sizes may vary on a specific network according to numbering plan and other technical information. </br>
+The reference is:
+</br></br><blockquote><ul>
+<li>SIP Header average size of 600 bytes
+<li>SIP Message body of INVITE (SDP+ISUP) average size of 900 bytes
+</ul></blockquote>
+Those conditions work as 
+</br></br><blockquote><ul>
+<li>28KB per call (as of 4 legs and 44 operations) in RAW PCAP format 
+<li>393MB of DB use for SIP INVITE per day 
+<li>81MB of DB use for SIP REGISTER per day 
+</ul></blockquote>
+Having storage compression enabled reference implementation goes:
+</br></br><blockquote><ul>
+<li>Storage capacity required 3Tb (RAID10 on 8 disk drives)
+</ul></blockquote>
+Disk subsytem works with following IOPS 
+</br></br><blockquote><ul>
+<li>250-350 average write intensity operations per seconds (IPS) 
+<li>2000-3000 peak write intensity operations per seconds (IPS) 
+</ul></blockquote>
 
         </div>
         </div>
