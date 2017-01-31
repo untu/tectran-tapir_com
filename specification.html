@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Add Your favicon here -->
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>TECTRAN TAPIR</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <link href="css/feedback-form.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body id="page-top">
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#contact">TRY FOR FREE</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="/#page-top">Home</a></li>
+                        <li><a class="page-scroll" href="/#features">Capabilities</a></li>
+                        <li><a class="page-scroll" href="/specification.html">Spec</a></li>
+                        <li><a class="page-scroll" href="/#vidos">Video</a></li>
+                        <li><a class="page-scroll" href="/#testimonials">Reviews</a></li>
+                        <li><a class="page-scroll" href="/#contact">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+
+<pre>
+
+TECTRAN TAPIR Technical Specification
+    TECTRAN is a short word for Technical Transactions Analysis implementation. 
+    TAPIR is an unique name of telecom protocols family product. 
+    This document describes technology aspects of TECTRAN TAPIR functionality support.
+    Document update and contacts are avaliable on http://tectran-tapir.com 
+
+Key functions
+    Raw data spanned data PCAP and CDR parsing/load from multi-source
+    Web access with multi-level permissions with search/filter abilities
+    Ultra-fast call-optimised backend storage
+
+Solution functionals
+    High speed time, called/calling uri search/filtering
+    Line per call search result representation with call details aggregation
+    Dynamic call-flow diagram build for each and any selected call with any number of legs
+    Call-flow diagram export with graphic (PNG), text (TXT) and Wireshark (PCAP) for later analysis and share
+    Real-time Key Performance Indicators calculation and visualisation (graphics, widgets)
+    Calls data and KPI enrichment with data arriving offline
+    Individual time-to-store settings for each of the SIP method to save space and valuable data
+    Nodes naming service for call-flow diagrams visualisation to help engineers to troubleshoot fast
+    Valuable SIP fields and URI color highlighting to help engineers to troubleshoot fast
+
+Web UI functionals
+    Authentication with LDAP/AD support
+    Manageable roles and permissions for numbering plan and operations access 
+    Roles based dashboard and search/filter customisation
+    Paged output for huge amount of searched/filtered calls results
+    Amount of widgets and graphics to organise all the KPIs dashboard for instant operability control 
+
+
+
+Real-time collected KPI 
+    Answer Seizure Ratio, per node and overall
+    SIP Status Codes accounting as per node as for nodes group configured
+    Individual call Call Duration Time
+    Individual call Call Setup Time
+
+Off-line collected KPI from CDR
+    RTCP Packets Lost
+    RTCP Average Jitter
+    RTCP Average Latency
+    RTCP Max Jitter
+    RTCP Max Latency
+    RTP Packets Lost
+    RTP Average Jitter
+    RTP Max Jitter
+    Calling R-Factor
+    Calling Mean Opinion Score
+    Called R-Factor
+    Called Mean Opinion Score
+
+Data source supported
+    SPAN Ports traffic files
+    Oracle SBC CDR files
+    Soft-Switch log files (an adaptation may require) 
+
+Basic IP-telephony protocols support
+    SIP-INVITE and associated methods
+    SIP-REGISTER and associated methods
+    SIP-I/SIP-T with MIME content decoding
+
+Extended features
+    CAMEL/CAP parsing and storage support
+    MAP parsing and storage support
+    ISUP parsing and storage support
+    DIAMETER parsing and storage support
+
+Note: for legacy TDM SS7 support customer may require HW probes for data collect
+
+Real-time collected KPI enrichment planned
+    Average Call Duration
+    Registration Request Delay
+    Ineffective Registration Attempts
+    Successful Session Setup
+    Session Disconnect Delay
+    Failed Session Completion
+
+IP-telephony protocols enrichment planned
+    Real-time raw RTP parsing
+    Real-time raw RTCP parsing
+
+Raw data parsing SIP methods enrichment planned
+    OPTIONS
+    MESSAGE
+    SUBSCRIBE
+    NOFITY
+
+FF
+
+</pre>
+
+
+
+<section id="contact" class="container services">
+    <div class="row">
+           <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Interested in details?</h1>
+                 <p>We'll tell you everything about <span class="navy">TECTRAN TAPIR</span></p>
+            
+        </div>     
+    </div>
+    <div class="row feedback">
+        <div class="col-md-5 center-block">
+            <form class="form-horizontal feedback-form js-feedback-form flipInX">
+                <div class="form-group floating-label-form-group">
+                    <label>Your Name</label>
+                    <input type="text" name="name" class="form-control" placeholder="Your name">
+                    <span class="help-block">Enter your name</span>
+                </div>
+                <div class="form-group floating-label-form-group">
+                    <label>Your e-mail or phone number</label>
+                    <input type="text" name="contacts" class="form-control" placeholder="Your name or phone number">
+                    <span class="help-block">Enter your email or phone number</span>
+                </div>
+                <div class="form-group submit-btn">
+                    <div class="center-block col-md-6">
+                        <button type="submit" class="col-md-12 btn btn-primary js-send-form-btn">Learn more</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-5 feedback-thx center-block">
+            <h3>
+                <span class="bigicon fa fa-envelope-o"></span>
+                Thank you!
+            </h3>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="gray-section contact">
+    <div class="container text-center">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Contact us</h1>
+            </div>
+        </div>
+        <div class="row m-b-lg">
+             <div class="col-lg-12 text-center wow zoomIn">
+                <address>
+                    <strong><span class="navy">UNTU</span></strong><br/>
+                    US, NY, Brooklin<br/>
+                    
+                    <abbr title="Phone">T:</abbr> +1 323 6474576
+                </address>
+            </div>
+            <div class="col-lg-4">
+                <p class="text-color">
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="mailto:welcome@saymon.info" class="btn btn-primary">Write to us</a>
+                <p class="m-t-sm">
+                    <!-- Or follow us on social platform -->
+                </p>
+                <ul class="list-inline social-icon">
+                    <li><a href="https://twitter.com/SaymonSupport"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/saymonsupport/"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/company/saymon"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>&copy; 2016, 2017, UNTU, Inc.</strong><br/><!--  consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/inspinia.js"></script>
+<script src="js/feedback-form.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77928955-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter37443560 = new Ya.Metrika({
+                    id:37443560,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/37443560" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+</body>
+
+
+</html>
