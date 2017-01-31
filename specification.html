@@ -43,7 +43,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#contact">TRY FOR FREE</a>
+                    <a class="navbar-brand" href="/#contact">TRY FOR FREE</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -59,191 +59,142 @@
         </nav>
 </div>
 
+<img src="img/header_one_two.jpg">
 
-    <section  id="features" class="gray-section features">
+
+
+<section class="features">
     <div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-<pre>
+        <div class="row">
+            <div class="col-lg-12 ">
+                
+                <h1>TECTRAN TAPIR Technical Specification</h1>
+        TECTRAN is a short word for Technical Transactions Analysis implementation. </br>
+        TAPIR is an unique name of telecom protocols family product. </br>
+        This document describes technology aspects of TECTRAN TAPIR functionality support.</br>
+        
+         </br></br>
+<dl>
+    <dt>Key functions</dt></br>
+    <dd><blockquote>
+        <li>Raw data spanned data PCAP and CDR parsing/load from multi-source</br>
+        <li>Web access with multi-level permissions with search/filter abilities</br>
+        <li>Ultra-fast call-optimised backend storage</br>
+    </blockquote></dd>    
+    
+    <dt>Solution functionals</dt></br>
+    <dd><blockquote>
 
-TECTRAN TAPIR Technical Specification
-    TECTRAN is a short word for Technical Transactions Analysis implementation. 
-    TAPIR is an unique name of telecom protocols family product. 
-    This document describes technology aspects of TECTRAN TAPIR functionality support.
-    Document update and contacts are avaliable on http://tectran-tapir.com 
+        <li>High speed time, called/calling uri search/filtering</br>
+        <li>Line per call search result representation with call details aggregation</br>
+        <li>Dynamic call-flow diagram build for each and any selected call with any number of legs</br>
+        <li>Call-flow diagram export with graphic (PNG), text (TXT) and Wireshark (PCAP) for later analysis and share</br>
+        <li>Real-time Key Performance Indicators calculation and visualisation (graphics, widgets)</br>
+        <li>Calls data and KPI enrichment with data arriving offline</br>
+        <li>Individual time-to-store settings for each of the SIP method to save space and valuable data</br>
+        <li>Nodes naming service for call-flow diagrams visualisation to help engineers to troubleshoot fast</br>
+        <li>Valuable SIP fields and URI color highlighting to help engineers to troubleshoot fast</br>
+    </blockquote></dd>    
 
-Key functions
-    Raw data spanned data PCAP and CDR parsing/load from multi-source
-    Web access with multi-level permissions with search/filter abilities
-    Ultra-fast call-optimised backend storage
+    <dt>Web UI functionals</dt></br>
+    <dd><blockquote>
+        <li>Authentication with LDAP/AD support</br>
+        <li>Manageable roles and permissions for numbering plan and operations access </br>
+        <li>Roles based dashboard and search/filter customisation</br>
+        <li>Paged output for huge amount of searched/filtered calls results</br>
+        <li>Amount of widgets and graphics to organise all the KPIs dashboard for instant operability control </br>
+    </blockquote></dd>    
+    
+    <dt>Real-time collected KPI</dt></br>
+    <dd><blockquote> 
+        <li>Answer Seizure Ratio, per node and overall</br>
+        <li>SIP Status Codes accounting as per node as for nodes group configured</br>
+        <li>Individual call Call Duration Time</br>
+        <li>Individual call Call Setup Time</br>
+    </blockquote></dd>    
 
-Solution functionals
-    High speed time, called/calling uri search/filtering
-    Line per call search result representation with call details aggregation
-    Dynamic call-flow diagram build for each and any selected call with any number of legs
-    Call-flow diagram export with graphic (PNG), text (TXT) and Wireshark (PCAP) for later analysis and share
-    Real-time Key Performance Indicators calculation and visualisation (graphics, widgets)
-    Calls data and KPI enrichment with data arriving offline
-    Individual time-to-store settings for each of the SIP method to save space and valuable data
-    Nodes naming service for call-flow diagrams visualisation to help engineers to troubleshoot fast
-    Valuable SIP fields and URI color highlighting to help engineers to troubleshoot fast
+    <dt>Off-line collected KPI from CDR</dt></br>
+    <dd><blockquote>
+        <li>RTCP Packets Lost</br>
+        <li>RTCP Average Jitter</br>
+        <li>RTCP Average Latency</br>
+        <li>RTCP Max Jitter</br>
+        <li>RTCP Max Latency</br>
+        <li>RTP Packets Lost</br>
+        <li>RTP Average Jitter</br>
+        <li>RTP Max Jitter</br>
+        <li>Calling R-Factor</br>
+        <li>Calling Mean Opinion Score</br>
+        <li>Called R-Factor</br>
+        <li>Called Mean Opinion Score</br>
+    </blockquote></dd>    
 
-Web UI functionals
-    Authentication with LDAP/AD support
-    Manageable roles and permissions for numbering plan and operations access 
-    Roles based dashboard and search/filter customisation
-    Paged output for huge amount of searched/filtered calls results
-    Amount of widgets and graphics to organise all the KPIs dashboard for instant operability control 
+    <dt>Data source supported</dt></br>
+    <dd><blockquote>
+        <li>SPAN Ports traffic files</br>
+        <li>Oracle SBC CDR files</br>
+        <li>Soft-Switch log files (an adaptation may require) </br>
+    </blockquote></dd>    
 
+    <dt>Basic IP-telephony protocols support</dt></br>
+    <dd><blockquote>
+        <li>SIP-INVITE and associated methods</br>
+        <li>SIP-REGISTER and associated methods</br>
+        <li>SIP-I/SIP-T with MIME content decoding</br>
+    </blockquote></dd>    
 
+    <dt>Extended features</dt></br>
+    <dd><blockquote>
+        <li>CAMEL/CAP parsing and storage support</br>
+        <li>MAP parsing and storage support</br>
+        <li>ISUP parsing and storage support</br>
+        <li>DIAMETER parsing and storage support</br>
+    </blockquote>
+    Note: for legacy TDM SS7 support customer may require HW probes for data collect</br>
+    </dd>    
+    </br>
+    <dt>Real-time collected KPI enrichment planned</dt></br>
+    <dd><blockquote>
+        <li>Average Call Duration</br>
+        <li>Registration Request Delay</br>
+        <li>Ineffective Registration Attempts</br>
+        <li>Successful Session Setup</br>
+        <li>Session Disconnect Delay</br>
+        <li>Failed Session Completion</br>
+    </blockquote></dd>    
 
-Real-time collected KPI 
-    Answer Seizure Ratio, per node and overall
-    SIP Status Codes accounting as per node as for nodes group configured
-    Individual call Call Duration Time
-    Individual call Call Setup Time
+    <dt>IP-telephony protocols enrichment planned</dt></br>
+    <dd><blockquote>
+        <li>Real-time raw RTP parsing</br>
+        <li>Real-time raw RTCP parsing</br>
+    </blockquote></dd>    
 
-Off-line collected KPI from CDR
-    RTCP Packets Lost
-    RTCP Average Jitter
-    RTCP Average Latency
-    RTCP Max Jitter
-    RTCP Max Latency
-    RTP Packets Lost
-    RTP Average Jitter
-    RTP Max Jitter
-    Calling R-Factor
-    Calling Mean Opinion Score
-    Called R-Factor
-    Called Mean Opinion Score
-
-Data source supported
-    SPAN Ports traffic files
-    Oracle SBC CDR files
-    Soft-Switch log files (an adaptation may require) 
-
-Basic IP-telephony protocols support
-    SIP-INVITE and associated methods
-    SIP-REGISTER and associated methods
-    SIP-I/SIP-T with MIME content decoding
-
-Extended features
-    CAMEL/CAP parsing and storage support
-    MAP parsing and storage support
-    ISUP parsing and storage support
-    DIAMETER parsing and storage support
-
-Note: for legacy TDM SS7 support customer may require HW probes for data collect
-
-Real-time collected KPI enrichment planned
-    Average Call Duration
-    Registration Request Delay
-    Ineffective Registration Attempts
-    Successful Session Setup
-    Session Disconnect Delay
-    Failed Session Completion
-
-IP-telephony protocols enrichment planned
-    Real-time raw RTP parsing
-    Real-time raw RTCP parsing
-
-Raw data parsing SIP methods enrichment planned
-    OPTIONS
-    MESSAGE
-    SUBSCRIBE
-    NOFITY
-
+    <dt>Raw data parsing SIP methods enrichment planned</dt></br>
+    <dd><blockquote>
+        <li>OPTIONS</br>
+        <li>MESSAGE</br>
+        <li>SUBSCRIBE</br>
+        <li>NOFITY</br>
+    </blockquote></dd>  
+</dl>  
 FF -J
 
-</pre>
+
         </div>
         </div>
     </div> 
 </section>
 
 
-<section id="contact" class="container services">
-    <div class="row">
-           <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>Interested in details?</h1>
-                 <p>We'll tell you everything about <span class="navy">TECTRAN TAPIR</span></p>
-            
-        </div>     
-    </div>
-    <div class="row feedback">
-        <div class="col-md-5 center-block">
-            <form class="form-horizontal feedback-form js-feedback-form flipInX">
-                <div class="form-group floating-label-form-group">
-                    <label>Your Name</label>
-                    <input type="text" name="name" class="form-control" placeholder="Your name">
-                    <span class="help-block">Enter your name</span>
-                </div>
-                <div class="form-group floating-label-form-group">
-                    <label>Your e-mail or phone number</label>
-                    <input type="text" name="contacts" class="form-control" placeholder="Your name or phone number">
-                    <span class="help-block">Enter your email or phone number</span>
-                </div>
-                <div class="form-group submit-btn">
-                    <div class="center-block col-md-6">
-                        <button type="submit" class="col-md-12 btn btn-primary js-send-form-btn">Learn more</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="col-md-5 feedback-thx center-block">
-            <h3>
-                <span class="bigicon fa fa-envelope-o"></span>
-                Thank you!
-            </h3>
-        </div>
-    </div>
-</section>
 
 
 
 
 <section class="gray-section contact">
     <div class="container text-center">
-        <div class="row m-b-lg">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>Contact us</h1>
-            </div>
-        </div>
-        <div class="row m-b-lg">
-             <div class="col-lg-12 text-center wow zoomIn">
-                <address>
-                    <strong><span class="navy">UNTU</span></strong><br/>
-                    US, NY, Brooklin<br/>
-                    
-                    <abbr title="Phone">T:</abbr> +1 323 6474576
-                </address>
-            </div>
-            <div class="col-lg-4">
-                <p class="text-color">
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <a href="mailto:welcome@saymon.info" class="btn btn-primary">Write to us</a>
-                <p class="m-t-sm">
-                    <!-- Or follow us on social platform -->
-                </p>
-                <ul class="list-inline social-icon">
-                    <li><a href="https://twitter.com/SaymonSupport"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="https://www.facebook.com/saymonsupport/"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/company/saymon"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <p><strong>&copy; 2016, 2017, UNTU, Inc.</strong><br/><!--  consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p> -->
+                <p><strong>&copy; 2016, 2017, UNTU, Inc.</strong><br/>
             </div>
         </div>
     </div>
