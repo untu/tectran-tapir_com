@@ -61,12 +61,12 @@
 </div>
 
 
-<img src="img/header_one_two.jpg">
+<img src="img/header_123.png">
 
 
 
 <section class="features">
-    <div class="container">
+    <div class="container" style="padding-left: 85px; padding-right: 85px;">
         <div class="row">
             <div class="col-lg-12 ">
                 
@@ -77,56 +77,56 @@
         
          </br></br>
     
-For the correct sizing of the TECTRAN TAPIR nodes a telecom and/or IP-telephony network and it’s traffic inspection need to be done. Some of important parameters are:
-</br></br><blockquote><ul>
-<li>Number of days for call history storage required
-<li>Number of days for user registration history storage required
-<li>Number of legs for each of the call scenario
-<li>Number of traffic data source need to be analysed (including SPAN probes, CDR, etc)
-<li>Operations per call (technical transactions) for each of scenario
-<li>Identify if technical traffic copy recording already activated/used 
-<li>Storage capacity limitations if a site already have HW to re-use
-</ul></blockquote>
-The listed parameters identification helps to clarify data volumes and plan on site or cloud resources required for the network. 
-</br></br>
-The following capacity reference is useful for planning. 
-</br></br><blockquote><ul>
-<li>Calls history store for 20 days (SIP INVITE and associated exchange)
-<li>Customer User-Agents registration history sore for 20 days (SIP REGISTER)
-</ul></blockquote>
-Number of legs of capture is an important parameter. </br>
-The reference is designed as  
-</br></br><blockquote><ul>
-<li>4-leg traffic: Internet -(1)- Access -(2)- SSW -(3)- SBC-I -(4)- SBC-Core
-</ul></blockquote>
-</br>
-In each network a call could be assisted with a various number of infrastructure nodes intercommunication. </br>
-The reference use is:
-</br></br><blockquote><ul>
-<li>44 operations per call (SIP PDU or arrows on datagram) 
-<li>12 operations per leg
-</ul></blockquote>
-Protocol Data Unit (PDU) sizes may vary on a specific network according to numbering plan and other technical information. </br>
-The reference is:
-</br></br><blockquote><ul>
-<li>SIP Header average size of 600 bytes
-<li>SIP Message body of INVITE (SDP+ISUP) average size of 900 bytes
-</ul></blockquote>
-Those conditions work as 
-</br></br><blockquote><ul>
-<li>28KB per call (as of 4 legs and 44 operations) in RAW PCAP format 
-<li>393MB of DB use for SIP INVITE per day 
-<li>81MB of DB use for SIP REGISTER per day 
-</ul></blockquote>
-Having storage compression enabled reference implementation goes:
-</br></br><blockquote><ul>
-<li>Storage capacity required 3Tb (RAID10 on 8 disk drives)
-</ul></blockquote>
-Disk subsytem works with following IOPS 
-</br></br><blockquote><ul>
-<li>250-350 average write intensity operations per seconds (IPS) 
-<li>2000-3000 peak write intensity operations per seconds (IPS) 
-</ul></blockquote>
+            For the correct sizing of the TECTRAN TAPIR nodes a telecom and/or IP-telephony network and it’s traffic inspection need to be done. Some of important parameters are:
+            </br></br><blockquote><ul>
+            <li>Number of days for call history storage required
+            <li>Number of days for user registration history storage required
+            <li>Number of legs for each of the call scenario
+            <li>Number of traffic data source need to be analysed (including SPAN probes, CDR, etc)
+            <li>Operations per call (technical transactions) for each of scenario
+            <li>Identify if technical traffic copy recording already activated/used 
+            <li>Storage capacity limitations if a site already have HW to re-use
+            </ul></blockquote>
+            The listed parameters identification helps to clarify data volumes and plan on site or cloud resources required for the network. 
+            </br></br>
+            The following capacity reference is useful for planning. 
+            </br></br><blockquote><ul>
+            <li>Calls history store for 20 days (SIP INVITE and associated exchange)
+            <li>Customer User-Agents registration history sore for 20 days (SIP REGISTER)
+            </ul></blockquote>
+            Number of legs of capture is an important parameter. </br>
+            The reference is designed as  
+            </br></br><blockquote><ul>
+            <li>4-leg traffic: Internet -(1)- Access -(2)- SSW -(3)- SBC-I -(4)- SBC-Core
+            </ul></blockquote>
+            </br>
+            In each network a call could be assisted with a various number of infrastructure nodes intercommunication. </br>
+            The reference use is:
+            </br></br><blockquote><ul>
+            <li>44 operations per call (SIP PDU or arrows on datagram) 
+            <li>12 operations per leg
+            </ul></blockquote>
+            Protocol Data Unit (PDU) sizes may vary on a specific network according to numbering plan and other technical information. </br>
+            The reference is:
+            </br></br><blockquote><ul>
+            <li>SIP Header average size of 600 bytes
+            <li>SIP Message body of INVITE (SDP+ISUP) average size of 900 bytes
+            </ul></blockquote>
+            Those conditions work as 
+            </br></br><blockquote><ul>
+            <li>28KB per call (as of 4 legs and 44 operations) in RAW PCAP format 
+            <li>393MB of DB use for SIP INVITE per day 
+            <li>81MB of DB use for SIP REGISTER per day 
+            </ul></blockquote>
+            Having storage compression enabled reference implementation goes:
+            </br></br><blockquote><ul>
+            <li>Storage capacity required 3Tb (RAID10 on 8 disk drives)
+            </ul></blockquote>
+            Disk subsytem works with following IOPS 
+            </br></br><blockquote><ul>
+            <li>250-350 average write intensity operations per seconds (IPS) 
+            <li>2000-3000 peak write intensity operations per seconds (IPS) 
+            </ul></blockquote>
 
         </div>
         </div>
